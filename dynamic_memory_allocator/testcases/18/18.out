@@ -1,0 +1,14 @@
+allocated 512
+free 512
+allocated 1024
+free 2048
+allocated 4096
+free 8192
+allocated 16384
+allocated 512
+free 512
+allocated 1024
+free 2048
+allocated 4096
+free 8192
+allocated 16384

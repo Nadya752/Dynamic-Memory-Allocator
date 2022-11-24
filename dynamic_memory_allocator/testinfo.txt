@@ -1,0 +1,30 @@
+Test 1 – Positive case: testing init allocator with not enough space.
+Test 2 – Positive case: testing init allocator with enough space.
+Test 3 – Negative case: testing a null heapstart on init allocator.
+Test 4 – Edge case: testing init allocator with a min size that is larger than max size.
+Test 5 – Positive case: testing malloc when requested size is larger than min_size and there are available space.
+Test 6 – Positive case: testing malloc when requested size is min_size and there are available space.
+Test 7 – Positive case: testing malloc when requested size is smaller than min_size and there are available space.
+Test 8 – Negative case: testing malloc when space is unavailable.
+Test 9 – Negative case: testing malloc when requested size is bigger than max_size.
+Test 10 – Edge case: requesting a zero size for malloc.
+Test 11 – Edge case: requesting sizes just above one size so it does not perfectly fill a slot for malloc.
+Test 12 – Positive case: testing free that triggers merging of blocks.
+Test 13 – Positive case: testing free that triggers merging of blocks 2.
+Test 14 – Positive case: testing free that does not trigger a merge because buddy is allocated.
+Test 15 – Positive case: testing free that does not trigger a merge because buddy is allocated and split up.
+Test 16 – Positive case: testing free that does not trigger a merge because buddy is "free" but split up.
+Test 17 – Positive case: testing free when the blocks are in a free, not free, free, not free, free, pattern.
+Test 18 – Negative case: testing free when the pointer is NULL.
+Test 19 – Edge case: testing free when block is already free.
+Test 20 – Positive case: testing realloc when pointer is NULL (which means a normal malloc) and space is available.
+Test 21 – Negative case: testing realloc when pointer is NULL (which means a normal malloc) and space is not available.
+Test 22 – Positive case: testing realloc to a bigger size, and space is available.
+Test 23 – Positive case: testing realloc to a smaller size, and space is available.
+Test 24 – Negative case: testing realloc but no space is available.
+Test 25 – Negative case: testing realloc but no space is available2.
+Test 26 – Positive case: testing realloc to find the best fit not first fit.
+Test 27 – Edge case: testing realloc when pointer is pointing to a free block.
+Test 28 – Positive case: testing everything.
+Test 29 – Edge case: testing everything: one block that has the same min_size and max_size.
+Test 30 – Edge case: testing everything: a very large gap betweem min_size and max_size.

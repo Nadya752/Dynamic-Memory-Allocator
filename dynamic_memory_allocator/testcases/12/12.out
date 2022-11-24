@@ -1,0 +1,8 @@
+allocated 256
+allocated 256
+allocated 256
+free 256
+allocated 512
+free 512
+free 2048
+free 4096
